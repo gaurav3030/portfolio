@@ -1,0 +1,165 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.navbar{
+    width: 100%;
+    height: 7vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.navcontent{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navactive{
+    background-color: rgb(14, 58, 253);
+    border-radius: 10px;
+}
+.navactiveprojects{
+    background-color: rgb(22, 22, 22);
+    border-radius: 10px;
+}
+
+.logo{
+    font-size: 4vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    color: rgb(14, 58, 253);
+    transition: 0.3s;
+}
+
+.navlist{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.navlink{
+    margin: 0 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 2vh;
+    padding: 10px 10px;
+    transition: 0.3s;
+}
+
+.pages{
+
+    height: 100vh;
+    width: 100%;
+    background-color: burlywood;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+    scroll-snap-type: y mandatory;
+}
+.pages::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+.intro{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(22, 22, 22);
+    scroll-snap-align: end;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.projectspage{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(14, 58, 253);
+    scroll-snap-align: end;
+    
+}
+
+
+.introcontent{
+
+    height: 70vh;
+    width: 70%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.photo img{
+    width: 20vw;
+}
+.photo{
+    box-shadow: 15px 15px rgb(14, 58, 253);
+}
+.description{
+    width: fit-content;
+    background-color: transparent;
+    padding-left: 50px;
+    width: 35vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    
+    color: white;
+}
+.greet{
+    font-size: 7vh;
+    text-shadow: 6px 0 rgb(14, 58, 253);
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    font-weight: 700;
+}
+.subgreet{
+    font-size: 4vh;
+    margin-top: 10px;
+    text-shadow: 4px 0 rgb(14, 58, 253);
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.techstack{
+    height: 30vh;
+    width: 80%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.socialmedia{
+    height: 50vh;
+    width: 80px;
+    position: fixed;
+    left: 0;
+    top: 25%;
+    z-index: 1;
+    border-radius: 0 40px 40px 0;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.3s;
+    background-color: rgb(10, 10, 10);
+}
+.socialmedia i:hover{
+    color: rgb(14, 58, 253);
+}
+
+

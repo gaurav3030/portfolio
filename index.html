@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/8fc83315b3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="navcontent">
+            <div class="logo">GP</div>
+            <div class="navlist">
+                <div class="navlink navactive"><a href="">Home</a></div>
+                <div class="navlink"><a href="">Projects</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="socialmedia">
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-codepen"></i>
+        <i class="fab fa-instagram"></i>
+    </div>
+    <div class="pages" id="myDIV" onscroll="myFunction()">
+        <div class="intro" id="intro">
+            <div class="introcontent">
+                <div class="photo"><img src="webphoto.jpg" alt=""></div>
+                <div class="description">
+                    <div class="greet">Hi!! I am Gaurav</div>
+                    <div class="subgreet">Building Websites and Data Science enthusiast.</div>
+                </div>
+            </div>
+            <div class="techstack">
+                <img src="icons8-html-5.svg" alt="">
+                <img src="icons8-css3.svg" alt="">
+                <img src="icons8-javascript.svg" alt="">
+                <img src="icons8-react.svg" alt="">
+                <img src="icons8-nodejs.svg" alt="">
+            </div>
+        </div>
+        <div class="projectspage">
+
+        </div>
+    </div>
+    <script>
+
+function myFunction() {
+  var elmnt = document.getElementById("myDIV");
+  var x = elmnt.scrollLeft;
+  var y = elmnt.scrollTop;
+
+  if(y<200){
+    document.getElementsByClassName("logo")[0].style.color ="#0e3afd";
+    document.getElementsByClassName("navlink")[0].classList.add("navactive");
+    document.getElementsByClassName("navlink")[1].classList.remove("navactiveprojects");
+  }
+  if(y>900){
+    document.getElementsByClassName("logo")[0].style.color ="#fff";
+    document.getElementsByClassName("navlink")[0].classList.remove("navactive");
+    document.getElementsByClassName("navlink")[1].classList.add("navactiveprojects");
+  }
+}
+
+        
+
+    </script>
+
+</body>
+</html>
